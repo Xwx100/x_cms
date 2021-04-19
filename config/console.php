@@ -5,6 +5,6 @@
 return [
     // 指令定义
     'commands' => [
-        'make:model_prop' => \app\command\ModelProp::class
+        'make:model_prop' => \app\command\MakeTable::class
     ],
 ];

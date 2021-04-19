@@ -22,7 +22,7 @@ class ModelProp extends Command
         $this->setName($this->name)
             ->addArgument('connect_name', Argument::OPTIONAL, "数据库连接配置")
             ->addOption('output_dir', null, Option::VALUE_REQUIRED, "root输出目录", 'app/model_prop')
-            ->setDescription('制作模型属性');
+            ->setDescription('制作数组表格');
     }
 
 
@@ -48,15 +48,4 @@ class ModelProp extends Command
 
         $output->writeln($this->name);
     }
-}
-
-/**
- * Class User
- * @package app\command
- */
-class User implements \ArrayAccess
-{
-
-    protected $fields = [];
-
 }
